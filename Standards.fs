@@ -81,5 +81,5 @@ module Usage =
         |> List.filter (fun _ -> true)
         |> List.map (fun f -> f * 2)
         |> List.map (fun f -> f * 4) // Avoid Multiple maps
-        |> Array.ofList // When changing between list types, use the new type module to visually indicate this
+        |> List.toArray // When changing between list types, use the new type module to visually indicate this
 
