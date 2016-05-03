@@ -75,6 +75,10 @@ module GuideLines =
 *)
 [<RequireQualifiedAccess>]
 module Usage = 
+
+    // Prefer Single Case Unions over type alias 'type AccountId = string'
+    type AccountId = AccountId of string
+
     // When packing tuples avoid the use of ()
     let packedTuples = 1, 2, 3, "x"
 
