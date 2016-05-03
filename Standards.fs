@@ -63,6 +63,12 @@ module GuideLines =
           Member1 : string
           /// Standard Function Comment
           Function1 : string -> string }
+    
+    /// Async function name's should end in 'Async'      
+    let private doThisAsync() = 
+        async {
+            return 0
+        }
 
 (*
     Usage module shows the prefered way of working with F#
